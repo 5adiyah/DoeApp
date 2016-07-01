@@ -40,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v){
         if(v == mProfileAbout){
-            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+            Intent intent = new Intent(ProfileActivity.this, AboutActivity.class);
             startActivity(intent);
         }else if(v == mProfileEvents){
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);

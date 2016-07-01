@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.daughtersofeve.ProfileActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/backgrnd2"
+        android:scaleType="matrix" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/WhiteIconText"
+            android:paddingBottom="30dp"
+            tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/sadiyah2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sadiyah2"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="SADIO ALI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameSadio"
+                android:layout_below="@+id/sadiyah2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Teal500Main"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="CREATIVE DIRECTOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleSadio"
+                android:layout_below="@+id/aboutNameSadio"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/GreyLight"
+                android:textSize="11sp"/>
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/abeer"
+                android:layout_below="@+id/aboutRoleSadio"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/abeer"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="ABEER KHAKWANI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameAbeer"
+                android:layout_below="@+id/abeer"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Teal500Main"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="EVENT COORDINATOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleAbeer"
+                android:layout_below="@+id/aboutNameAbeer"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/GreyLight"
+                android:textSize="11sp"/>
+
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/fatma2"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/fatma2"
+                android:layout_below="@+id/aboutNameAbeer"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="FATMAH WORFELEY"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameFatma"
+                android:layout_below="@+id/fatma2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Teal500Main"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="COMMUNICATIONS DIRECTOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleFatma"
+                android:layout_below="@+id/aboutNameFatma"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/GreyLight"
+                android:textSize="11sp"/>
+
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/farah2"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/farah2"
+                android:layout_below="@+id/aboutNameFatma"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="ABEER KHAKWANI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameFarah"
+                android:layout_below="@+id/farah2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Teal500Main"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="TREASURER"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleFarah"
+                android:layout_below="@+id/aboutNameFarah"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/GreyLight"
+                android:textSize="11sp"/>
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/raneen"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/raneem"
+                android:layout_below="@+id/aboutNameFarah"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="RANEEM ALI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameRaneem"
+                android:layout_below="@+id/raneen"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Teal500Main"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="OUTREACH COORDINATOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleFarah"
+                android:layout_below="@+id/aboutNameRaneem"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/GreyLight"
+                android:textSize="11sp"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
