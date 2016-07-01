@@ -83,16 +83,9 @@
                 android:paddingBottom="10dp"
                 tools:context="com.example.guest.daughtersofeve.MainActivity">
 
-                <ImageView
-                    android:layout_width="175dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="-22dp"
-                    android:id="@+id/CampFire"
-                    android:src="@drawable/fire"/>
-
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="STORY NIGHT"
                     android:id="@+id/eventName"
@@ -103,7 +96,7 @@
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
                     android:id="@+id/eventDetails"
@@ -111,6 +104,15 @@
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/CampFire"
+                    android:src="@drawable/fire"/>
+
 
 
             </RelativeLayout>
@@ -167,16 +169,9 @@
                 android:paddingBottom="10dp"
                 tools:context="com.example.guest.daughtersofeve.MainActivity">
 
-                <ImageView
-                    android:layout_width="175dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="-22dp"
-                    android:id="@+id/FormalEvents"
-                    android:src="@drawable/dinner"/>
-
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="MOTHER DAUGHTER DINNER"
                     android:id="@+id/eventName"
@@ -187,7 +182,7 @@
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
                     android:id="@+id/eventDetails"
@@ -195,6 +190,15 @@
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/FormalEvents"
+                    android:src="@drawable/dinner"/>
+
             </RelativeLayout>
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
