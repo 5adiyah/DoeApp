@@ -8,4 +8,6 @@
         <item name="colorAccent">@color/PinkAccent100</item>
     </style>
 
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
 </resources>

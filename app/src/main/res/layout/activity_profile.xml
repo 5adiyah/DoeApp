@@ -40,7 +40,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="30dp"
             android:layout_marginRight="-210dp"
-            android:src="@drawable/profilePic"/>
+            android:src="@drawable/profilepic2"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,13 +58,93 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DOE MEMBER"
-            android:id="@+id/profileSettings"
+            android:id="@+id/profileMemberType"
             android:layout_below="@+id/profileName"
             android:layout_alignParentRight="true"
             android:layout_marginTop="1dp"
             android:layout_marginRight="30dp"
             android:textColor="@color/GreyLight"
             android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:id="@+id/profileAbout"
+            android:layout_below="@+id/profileMemberType"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENTS"
+            android:id="@+id/profileEvents"
+            android:layout_below="@+id/profileAbout"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHOTOS"
+            android:id="@+id/profilePhotos"
+            android:layout_below="@+id/profileEvents"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY TICKETS"
+            android:id="@+id/profileTickets"
+            android:layout_below="@+id/profilePhotos"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY ACCOUNT"
+            android:id="@+id/profileAccount"
+            android:layout_below="@+id/profileTickets"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN OUT"
+            android:id="@+id/profileSignout"
+            android:layout_below="@+id/profileAccount"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/GreySecondaryText"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            />
+
 
     </RelativeLayout>
 
