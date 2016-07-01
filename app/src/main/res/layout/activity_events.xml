@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.daughtersofeve.EventsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/backgrnd2"
+        android:scaleType="matrix" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/WhiteIconText"
+            tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/WhiteIconText"
+                android:paddingBottom="10dp"
+                tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/HorseEvent"
+                    android:layout_marginTop="-22dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/horse"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="HORSE RIDING EVENT"
+                    android:id="@+id/eventHorseName"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Teal500Main"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+                    android:id="@+id/eventHorseDetails"
+                    android:layout_below="@+id/eventHorseName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/GreyLight"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="150dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/WhiteIconText"
+                android:paddingBottom="10dp"
+                tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/CampFire"
+                    android:src="@drawable/fire"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="STORY NIGHT"
+                    android:id="@+id/eventName"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Teal500Main"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+                    android:id="@+id/eventDetails"
+                    android:layout_below="@+id/eventName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/GreyLight"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="300dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/WhiteIconText"
+                android:paddingBottom="10dp"
+                tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/StudyGroup"
+                    android:src="@drawable/study"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="STUDY SESSIONS"
+                    android:id="@+id/eventName"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Teal500Main"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+                    android:id="@+id/eventDetails"
+                    android:layout_below="@+id/eventName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/GreyLight"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="450dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/WhiteIconText"
+                android:paddingBottom="10dp"
+                tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/FormalEvents"
+                    android:src="@drawable/dinner"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="MOTHER DAUGHTER DINNER"
+                    android:id="@+id/eventName"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/Teal500Main"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+                    android:id="@+id/eventDetails"
+                    android:layout_below="@+id/eventName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/GreyLight"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="600dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/WhiteIconText"
+                android:layout_marginBottom="-40dp"
+                tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/OutDoorEvents"
+                    android:src="@drawable/hike"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="HIKING EVENTS"
+                    android:id="@+id/eventName"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/Teal500Main"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+                    android:id="@+id/eventDetails"
+                    android:layout_below="@+id/eventName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/GreyLight"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
