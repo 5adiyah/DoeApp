@@ -38,18 +38,11 @@
                 android:paddingBottom="10dp"
                 tools:context="com.example.guest.daughtersofeve.MainActivity">
 
-                <ImageView
-                    android:layout_width="175dp"
-                    android:layout_height="150dp"
-                    android:id="@+id/HorseEvent"
-                    android:layout_marginTop="-22dp"
-                    android:layout_alignParentTop="true"
-                    android:src="@drawable/horse"/>
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:text="HORSE RIDING EVENT"
                     android:id="@+id/eventHorseName"
                     android:layout_marginTop="15dp"
@@ -59,14 +52,23 @@
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
                     android:id="@+id/eventHorseDetails"
                     android:layout_below="@+id/eventHorseName"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="175dp"
+                    android:id="@+id/HorseEvent"
+                    android:layout_marginTop="-22dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/horse"/>
 
             </RelativeLayout>
 
@@ -109,6 +111,8 @@
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+
             </RelativeLayout>
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -121,16 +125,9 @@
                 android:paddingBottom="10dp"
                 tools:context="com.example.guest.daughtersofeve.MainActivity">
 
-                <ImageView
-                    android:layout_width="175dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="-22dp"
-                    android:id="@+id/StudyGroup"
-                    android:src="@drawable/study"/>
-
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="STUDY SESSIONS"
                     android:id="@+id/eventName"
@@ -141,7 +138,7 @@
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
                     android:id="@+id/eventDetails"
@@ -149,6 +146,15 @@
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/StudyGroup"
+                    android:src="@drawable/study"/>
+
             </RelativeLayout>
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -201,16 +207,10 @@
                 android:layout_marginBottom="-40dp"
                 tools:context="com.example.guest.daughtersofeve.MainActivity">
 
-                <ImageView
-                    android:layout_width="175dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="-22dp"
-                    android:id="@+id/OutDoorEvents"
-                    android:src="@drawable/hike"/>
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="HIKING EVENTS"
                     android:id="@+id/eventName"
@@ -221,7 +221,7 @@
 
                 <TextView
                     android:layout_width="175dp"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
                     android:id="@+id/eventDetails"
@@ -229,6 +229,14 @@
                     android:layout_marginTop="5dp"
                     android:textColor="@color/GreyLight"
                     android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="-22dp"
+                    android:id="@+id/OutDoorEvents"
+                    android:src="@drawable/hike"/>
             </RelativeLayout>
 
 
