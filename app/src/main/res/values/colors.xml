@@ -3,8 +3,8 @@
     <color name="Teal100Light">#b2dfdb</color>
     <color name="Teal500Main">#009688</color>
     <color name="Teal900Dark">#004d40</color>
-    <color name="PinkAccent100">#FF80AB</color>
-    <color name="WhiteIconText">#fff</color>
+    <color name="PinkAccent100">#ff80ab</color>
+    <color name="WhiteIconText">#ffffff</color>
     <color name="GreyLight">#bdbdbd</color>
     <color name="GreySecondaryText">#616161</color>
     <color name="DarkMainText">#212121</color>
