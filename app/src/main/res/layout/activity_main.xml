@@ -39,7 +39,7 @@
             android:id="@+id/loginLogo"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="120dp"
             android:src="@drawable/logo"
             />
 
@@ -47,35 +47,42 @@
         <EditText
             android:layout_width="300dp"
             android:layout_height="45dp"
-            android:inputType="textEmailAddress"
+            android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/loginEmail"
-            android:layout_marginTop="240dp"
-            android:backgroundTint="@color/Teal100Light"
+            android:id="@+id/loginName"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="@color/GreyLight"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:hint="Enter In Your Name"
+            android:textColorHint="@color/GreyLight" />
 
 
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/loginPassword"
-            android:layout_below="@+id/loginEmail"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/Teal100Light"
-            android:layout_centerHorizontal="true" />
+        <!--<EditText-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/loginPassword"-->
+            <!--android:layout_below="@+id/loginEmail"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:backgroundTint="@color/Teal100Light"-->
+            <!--android:layout_centerHorizontal="true" />-->
 
         <Button
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:text="New Button"
             android:id="@+id/loginButton"
-            android:layout_below="@+id/loginPassword"
+            android:layout_below="@+id/loginName"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/PinkAccent100" />
+            android:layout_marginTop="60dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/PinkAccent100"
+            android:bottomRightRadius="200dp"
+            android:bottomLeftRadius="200dp"
+            android:topLeftRadius="200dp"
+            android:topRightRadius="200dp"/>
 
     </RelativeLayout>
 

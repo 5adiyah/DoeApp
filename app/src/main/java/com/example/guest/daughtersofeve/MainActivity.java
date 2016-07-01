@@ -12,8 +12,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.loginEmail) EditText mLoginEmail;
-    @Bind(R.id.loginPassword) EditText mLoginPassword;
+    @Bind(R.id.loginName) EditText mLoginName;
+//    @Bind(R.id.loginPassword) EditText mLoginPassword;
     @Bind(R.id.loginButton) Button mLoginButton;
 
     @Override
@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                String email = mLoginEmail.getText().toString();
+                String name = mLoginName.getText().toString();
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                intent.putExtra("email", email);
+                intent.putExtra("name", name);
                 startActivity(intent);
             }
         });
