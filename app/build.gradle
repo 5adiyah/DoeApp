@@ -21,6 +21,7 @@ android {
         it.buildConfigField 'String', 'ClientId', ClientId
         it.buildConfigField 'String', 'ClientSecret', ClientSecret
         it.buildConfigField 'String', 'RedirectUrl', RedirectUrl
+        it.buildConfigField 'String', 'AccessToken', AccessToken
     }
 }
 
