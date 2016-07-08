@@ -1,10 +1,18 @@
 package com.example.guest.daughtersofeve;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Response;
 import se.akerfeldt.okhttp.signpost.OkHttpOAuthConsumer;
 import se.akerfeldt.okhttp.signpost.SigningInterceptor;
 
@@ -27,6 +35,28 @@ public class InstagramService {
 
         Call call = client.newCall(request);
         call.enqueue(callback);
+    }
+
+    public ArrayList<Photo> processResults(Response response){
+        ArrayList<Photo> photos = new ArrayList<>();
+
+        try{
+            String jsonData = response.body().string();
+            if (response.isSuccessful()) {
+                JSONObject instagramJson = new JSONObject(jsonData);
+                JSONArray photosJSON = instagramJson.getJSONArray("data");
+                for(int i = 0; i < photosJSON.length(); i++){
+                    JSONObject photoJSON = photosJSON.getJSONObject(i);
+                    String caption = photosJSON.getJSONObject(1).getJSONObject("caption").getString("text");
+                    String url = photosJSON.getJSONObject(0).getJSONObject("images").getJSONObject("thumbnail").getString("url");
+            }
+        }
+    }   catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return photos;
     }
 }
 

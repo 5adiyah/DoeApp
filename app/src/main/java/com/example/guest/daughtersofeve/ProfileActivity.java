@@ -3,6 +3,7 @@ package com.example.guest.daughtersofeve;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import okhttp3.Call;
@@ -42,29 +43,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         mProfileAccount.setOnClickListener(this);
         mProfileSignOut.setOnClickListener(this);
 
-        getPhotos();
     }
 
-    private void getPhotos(){
-        final InstagramService instagramService = new InstagramService();
-        instagramService.findImages(new Callback(){
-
-            @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                try{
-                    String jsonData = response.body().string();
-                    Log.v(Tag, jsonData);
-                } catch(IOException e){
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
 
     @Override
     public void onClick(View v){
