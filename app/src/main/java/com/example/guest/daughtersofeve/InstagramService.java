@@ -2,6 +2,7 @@ package com.example.guest.daughtersofeve;
 
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
 import se.akerfeldt.okhttp.signpost.OkHttpOAuthConsumer;
 import se.akerfeldt.okhttp.signpost.SigningInterceptor;
 
@@ -19,6 +20,10 @@ public class InstagramService {
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.BaseUrl).newBuilder();
         urlBuilder.addQueryParameter(Constants.QueryParameter, Constants.AccessToken);
         String url = urlBuilder.build().toString();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
     }
 }
 
