@@ -3,18 +3,21 @@ package com.example.guest.daughtersofeve;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
+import butterknife.Bind;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
 public class PhotosActivity extends AppCompatActivity {
     public static final String TAG = "----";
-    @Bind(R.id.listView) ListView mListView;
-    @Bind(R.id.photoTextView) TextView mPhotoTextView;
+//    @Bind(R.id.listView) ListView mListView;
+//    @Bind(R.id.photoTextView) TextView mPhotoTextView;
 
     public ArrayList<Photo> mPhotos = new ArrayList<>();
 
@@ -40,13 +43,15 @@ public class PhotosActivity extends AppCompatActivity {
                 try{
                     String jsonData = response.body().string();
                     if(response.isSuccessful()){
-                        Log.v(TAG, jsonData);
+
                         mPhotos = instagramService.processResults(response);
+
                     }
                 } catch(IOException e){
                     e.printStackTrace();
                 }
             }
         });
-    }
+}
+
 }

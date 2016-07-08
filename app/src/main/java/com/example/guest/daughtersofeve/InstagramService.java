@@ -1,5 +1,7 @@
 package com.example.guest.daughtersofeve;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,6 +20,7 @@ import se.akerfeldt.okhttp.signpost.SigningInterceptor;
 
 
 public class InstagramService {
+    public static final String TAG = "----------";
     public static void findImages(Callback callback){
         OkHttpOAuthConsumer consumer = new OkHttpOAuthConsumer(Constants.ClientId, Constants.ClientSecret);
 
@@ -47,8 +50,8 @@ public class InstagramService {
                 JSONArray photosJSON = instagramJson.getJSONArray("data");
                 for(int i = 0; i < photosJSON.length(); i++){
                     JSONObject photoJSON = photosJSON.getJSONObject(i);
-                    String caption = photosJSON.getJSONObject(1).getJSONObject("caption").getString("text");
-                    String url = photosJSON.getJSONObject(0).getJSONObject("images").getJSONObject("thumbnail").getString("url");
+                    String caption = photoJSON.getJSONObject("caption").getString("text");
+                    String url = photoJSON.getJSONObject("images").getJSONObject("thumbnail").getString("url");
             }
         }
     }   catch (JSONException e) {

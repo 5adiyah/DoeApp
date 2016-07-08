@@ -25,6 +25,8 @@
         android:background="@color/WhiteIconText"
         tools:context="com.example.guest.daughtersofeve.MainActivity">
 
+        
+
     </RelativeLayout>
 
 </RelativeLayout>

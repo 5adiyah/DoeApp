@@ -7,6 +7,10 @@ public class Photo {
     private String mCaption;
     private String mUrl;
 
+    public Photo(){
+        //For Firebase
+    }
+
     public Photo(String caption, String url){
         this.mCaption = caption;
         this.mUrl = url;
