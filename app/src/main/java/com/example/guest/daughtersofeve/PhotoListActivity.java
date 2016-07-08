@@ -1,15 +1,15 @@
-package com.example.guest.daughtersofeve.ui;
+package com.example.guest.daughtersofeve;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.guest.daughtersofeve.ui.R;
 
-public class EventsActivity extends AppCompatActivity {
+public class PhotoListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_events);
+        setContentView(R.layout.activity_photo_list);
     }
 }

@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.guest.daughtersofeve.R;
+import com.example.guest.daughtersofeve.ui.R;
 import com.example.guest.daughtersofeve.ui.AboutActivity;
 import com.example.guest.daughtersofeve.ui.EventsActivity;
 import com.example.guest.daughtersofeve.ui.MainActivity;

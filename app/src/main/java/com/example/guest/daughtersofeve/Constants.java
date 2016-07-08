@@ -1,5 +1,5 @@
 package com.example.guest.daughtersofeve;
-
+import com.example.guest.daughtersofeve.ui.BuildConfig;;
 /**
  * Created by Guest on 7/8/16.
  */

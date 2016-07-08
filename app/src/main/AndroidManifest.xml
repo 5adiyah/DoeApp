@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.guest.daughtersofeve">
+    package="com.example.guest.daughtersofeve.ui">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -20,7 +20,8 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".EventsActivity" />
-        <activity android:name=".PhotosActivity"></activity>
+        <activity android:name=".PhotosActivity" />
+        <activity android:name=".PhotoListActivity"></activity>
     </application>
 
 </manifest>
