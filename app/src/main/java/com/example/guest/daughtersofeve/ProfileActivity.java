@@ -46,7 +46,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             Intent intent = new Intent(ProfileActivity.this, EventsActivity.class);
             startActivity(intent);
         }else if(v == mProfilePhotos){
-            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+            Intent intent = new Intent(ProfileActivity.this, PhotosActivity.class);
             startActivity(intent);
         }else if(v == mProfileTickets){
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
