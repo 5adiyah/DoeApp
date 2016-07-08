@@ -21,6 +21,7 @@ import se.akerfeldt.okhttp.signpost.SigningInterceptor;
 
 public class InstagramService {
     public static final String TAG = "----------";
+
     public static void findImages(Callback callback){
         OkHttpOAuthConsumer consumer = new OkHttpOAuthConsumer(Constants.ClientId, Constants.ClientSecret);
 
