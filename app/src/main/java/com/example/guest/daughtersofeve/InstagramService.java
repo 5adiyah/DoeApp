@@ -21,7 +21,6 @@ import se.akerfeldt.okhttp.signpost.SigningInterceptor;
 
 public class InstagramService {
     public static final String TAG = "----------";
-
     public static void findImages(Callback callback){
         OkHttpOAuthConsumer consumer = new OkHttpOAuthConsumer(Constants.ClientId, Constants.ClientSecret);
 
@@ -53,7 +52,10 @@ public class InstagramService {
                     JSONObject photoJSON = photosJSON.getJSONObject(i);
                     String caption = photoJSON.getJSONObject("caption").getString("text");
                     String url = photoJSON.getJSONObject("images").getJSONObject("thumbnail").getString("url");
-            }
+
+                    Photo photo = new Photo(caption, url);
+                    photos.add(photo);
+                }
         }
     }   catch (JSONException e) {
             e.printStackTrace();

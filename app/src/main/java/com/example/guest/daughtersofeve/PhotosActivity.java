@@ -20,6 +20,7 @@ public class PhotosActivity extends AppCompatActivity {
     @Bind(R.id.listView) ListView mListView;
 
     public ArrayList<Photo> mPhotos = new ArrayList<>();
+    public String test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class PhotosActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call call, Response response){
+                test = response.body().toString();
                 mPhotos = instagramService.processResults(response);
 
                 PhotosActivity.this.runOnUiThread(new Runnable() {
@@ -47,13 +49,13 @@ public class PhotosActivity extends AppCompatActivity {
                     @Override
                     public void run(){
                         String[] photoCaptions = new String[mPhotos.size()];
-                        for(int i = 0; i < photoCaptions.length; i++){
+                        for(int i = 0; i < photoCaptions.length-1; i++){
                             photoCaptions[i] = mPhotos.get(i).getCaption();
                         }
 
                         ArrayAdapter adapter = new ArrayAdapter(PhotosActivity.this,
                                 android.R.layout.simple_list_item_1, photoCaptions);
-                        mListView.setAdapter(adapter);
+//                        mListView.setAdapter(adapter);
 
                         for(Photo photo : mPhotos){
                             Log.d(TAG, "Caption: " + photo.getCaption());
