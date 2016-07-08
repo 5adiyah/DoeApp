@@ -6,5 +6,5 @@ package com.example.guest.daughtersofeve;
 public class Constants {
     public static final String ClientId = BuildConfig.ClientId;
     public static final String ClientSecret = BuildConfig.ClientSecret;
-
+    public static final String RedirectUrl = BuildConfig.RedirectUrl;
 }
