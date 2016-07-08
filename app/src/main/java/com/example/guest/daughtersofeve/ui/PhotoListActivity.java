@@ -1,4 +1,4 @@
-package com.example.guest.daughtersofeve;
+package com.example.guest.daughtersofeve.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

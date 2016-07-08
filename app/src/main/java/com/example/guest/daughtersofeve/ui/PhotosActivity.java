@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
@@ -25,7 +26,7 @@ import okhttp3.Response;
 public class PhotosActivity extends AppCompatActivity {
     public static final String TAG = PhotosActivity.class.getSimpleName();
 
-    @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
+    @Bind(R.id.RecyclerView) RecyclerView mRecyclerView;
     private PhotoListAdapter mAdapter;
 
     public ArrayList<Photo> mPhotos = new ArrayList<>();
@@ -34,7 +35,7 @@ public class PhotosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photos);
-
+        ButterKnife.bind(this);
         getPhotos();
     }
 
@@ -70,6 +71,6 @@ public class PhotosActivity extends AppCompatActivity {
                 });
             }
         });
-}
+    }
 
 }

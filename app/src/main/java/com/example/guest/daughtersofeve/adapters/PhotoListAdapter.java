@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -33,7 +34,6 @@ public class PhotoListAdapter extends RecyclerView.Adapter<PhotoListAdapter.Phot
         PhotoViewHolder viewHolder = new PhotoViewHolder(view);
         return viewHolder;
     }
-
     @Override
     public void onBindViewHolder(PhotoListAdapter.PhotoViewHolder holder, int position) {
         holder.bindPhoto(mPhotos.get(position));
@@ -57,6 +57,7 @@ public class PhotoListAdapter extends RecyclerView.Adapter<PhotoListAdapter.Phot
 
 
         public void bindPhoto(Photo photo) {
+            Picasso.with(mContext).load(photo.getUrl()).into(mPhotosImageView);
             mCaptionTextView.setText(photo.getCaption());
         }
     }
