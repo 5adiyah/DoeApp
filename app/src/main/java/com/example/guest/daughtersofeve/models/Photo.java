@@ -1,4 +1,4 @@
-package com.example.guest.daughtersofeve;
+package com.example.guest.daughtersofeve.models;
 
 /**
  * Created by Guest on 7/8/16.

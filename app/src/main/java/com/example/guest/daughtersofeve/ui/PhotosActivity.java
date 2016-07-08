@@ -1,4 +1,4 @@
-package com.example.guest.daughtersofeve;
+package com.example.guest.daughtersofeve.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,10 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.guest.daughtersofeve.R;
+import com.example.guest.daughtersofeve.models.Photo;
+import com.example.guest.daughtersofeve.services.InstagramService;
 
 import java.io.IOException;
 import java.util.ArrayList;

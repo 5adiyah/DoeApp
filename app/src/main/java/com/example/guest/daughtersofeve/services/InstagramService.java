@@ -1,6 +1,9 @@
-package com.example.guest.daughtersofeve;
+package com.example.guest.daughtersofeve.services;
 
 import android.util.Log;
+
+import com.example.guest.daughtersofeve.Constants;
+import com.example.guest.daughtersofeve.models.Photo;
 
 import org.json.JSONArray;
 import org.json.JSONException;
