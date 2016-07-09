@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="300dp"
     tools:context="com.example.guest.daughtersofeve.PhotoListActivity">
 
 
@@ -22,14 +22,13 @@
         android:layout_width="350dp"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:background="@color/WhiteIconText"
-        tools:context="com.example.guest.daughtersofeve.MainActivity">
+        android:background="@color/WhiteIconText">
 
 
 
         <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="match_parent"
+            android:layout_height="250dp"
             android:orientation="vertical">
 
             <ImageView
@@ -47,8 +46,7 @@
                 android:textSize="18dp"
                 android:text="Caption Here"
                 android:textColor="@color/GreySecondaryText"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="30dp"/>
+                android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
 
