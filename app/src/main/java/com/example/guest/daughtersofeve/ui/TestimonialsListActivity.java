@@ -29,9 +29,10 @@ public class TestimonialsListActivity extends AppCompatActivity {
         String testimonial = intent.getStringExtra("testimonial");
         mTestimonials.setText(testimonial);
 
-        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        mTestimonial = mSharedPreferences.getString(Constants.TESTIMONIAL, null);
-        Log.d("Shared pref testimonail", mTestimonial);
+
+//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mTestimonial = mSharedPreferences.getString(Constants.TESTIMONIAL, null);
+//        Log.d("Shared pref testimonail", mTestimonial);
 
     }
 }
