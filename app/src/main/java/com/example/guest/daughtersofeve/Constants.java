@@ -10,6 +10,7 @@ public class Constants {
     public static final String RedirectUrl = BuildConfig.RedirectUrl;
     public static final String BaseUrl = "https://api.instagram.com/v1/users/self/media/recent/";
     public static final String QueryParameter = "access_token";
+    public static final String TESTIMONIAL = "testimonial";
 }
 
 
