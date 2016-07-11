@@ -63,7 +63,7 @@ public class PhotosActivity extends AppCompatActivity {
                         mRecyclerView.setLayoutManager(layoutManager);
                         mRecyclerView.setHasFixedSize(true);
                         String[] photoCaptions = new String[mPhotos.size()];
-                        for(int i = 0; i < photoCaptions.length; i++){
+                        for(int i = 0; i < photoCaptions.length-1; i++){
                             photoCaptions[i] = mPhotos.get(i).getCaption();
                         }
                     }

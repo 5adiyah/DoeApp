@@ -53,7 +53,7 @@ public class InstagramService {
                 JSONArray photosJSON = instagramJson.getJSONArray("data");
                 for(int i = 0; i < photosJSON.length(); i++){
                     JSONObject photoJSON = photosJSON.getJSONObject(i);
-                    String caption = photoJSON.getJSONObject("caption").getString("text");
+                    String caption = photoJSON.getJSONObject("caption").optString("text", "No Caption Available");
                     String url = photoJSON.getJSONObject("images").getJSONObject("thumbnail").getString("url");
 
                     Photo photo = new Photo(caption, url);
