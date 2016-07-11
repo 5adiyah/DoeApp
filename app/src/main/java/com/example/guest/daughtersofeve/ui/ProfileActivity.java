@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guest.daughtersofeve.ui.R;
@@ -32,6 +33,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     @Bind(R.id.profileTickets) TextView mProfileTickets;
     @Bind(R.id.profileAccount) TextView mProfileAccount;
     @Bind(R.id.profileTestimonial) TextView mProfileTestimonial;
+    @Bind(R.id.relativeLayout) RelativeLayout mRelativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         mProfileTickets.setOnClickListener(this);
         mProfileAccount.setOnClickListener(this);
         mProfileTestimonial.setOnClickListener(this);
+        mRelativeLayout.setOnClickListener(this);
 
     }
 
@@ -72,6 +75,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(intent);
         }else if(v == mProfileTestimonial){
             Intent intent = new Intent(ProfileActivity.this, TestimonialActivity.class);
+            startActivity(intent);
+        }else if(v == mRelativeLayout){
+            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
         }
     }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "104499485278",
+    "firebase_url": "https://daughtersofeve-db197.firebaseio.com",
+    "project_id": "daughtersofeve-db197",
+    "storage_bucket": "daughtersofeve-db197.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104499485278:android:6db7d2217d83ca75",
+        "android_client_info": {
+          "package_name": "com.example.guest.daughtersofeve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104499485278-62gus41j9h0lftqv5b2gch5q87c8vr84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guest.daughtersofeve",
+            "certificate_hash": "45A88C0AEBA5F3FF89362B64A150A3648469069F"
+          }
+        },
+        {
+          "client_id": "104499485278-ljuf36jqc4ugbmmo6q6dbd18c30kle8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFgbQzvRNMyfheNduxqu6GZZod1MP9Ss8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104499485278-ljuf36jqc4ugbmmo6q6dbd18c30kle8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

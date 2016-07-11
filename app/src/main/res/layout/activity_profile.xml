@@ -28,6 +28,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="350dp"
         android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
         android:layout_alignParentRight="true"
         android:background="@color/WhiteIconText"
         tools:context="com.example.guest.daughtersofeve.MainActivity">
