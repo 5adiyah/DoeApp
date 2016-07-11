@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     @Bind(R.id.profilePhotos) TextView mProfilePhotos;
     @Bind(R.id.profileTickets) TextView mProfileTickets;
     @Bind(R.id.profileAccount) TextView mProfileAccount;
-    @Bind(R.id.profileSignOut) TextView mProfileSignOut;
+    @Bind(R.id.profileTestimonial) TextView mProfileTestimonial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         mProfilePhotos.setOnClickListener(this);
         mProfileTickets.setOnClickListener(this);
         mProfileAccount.setOnClickListener(this);
-        mProfileSignOut.setOnClickListener(this);
+        mProfileTestimonial.setOnClickListener(this);
 
     }
 
@@ -70,8 +70,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }else if(v == mProfileAccount){
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
-        }else if(v == mProfileSignOut){
-            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+        }else if(v == mProfileTestimonial){
+            Intent intent = new Intent(ProfileActivity.this, TestimonialActivity.class);
             startActivity(intent);
         }
     }
