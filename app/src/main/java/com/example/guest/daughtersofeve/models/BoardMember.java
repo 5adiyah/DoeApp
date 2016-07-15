@@ -4,6 +4,7 @@ public class BoardMember {
     private String name;
     private String imageUrl;
     private String position;
+    private String pushId;
 
 
     public BoardMember(){}
@@ -24,5 +25,13 @@ public class BoardMember {
 
     public String getPosition(){
         return position;
+    }
+
+    public String getPushId(){
+        return pushId;
+    }
+
+    public void setPushId(String pushId){
+        this.pushId = pushId;
     }
 }

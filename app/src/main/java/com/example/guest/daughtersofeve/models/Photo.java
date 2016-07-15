@@ -6,6 +6,7 @@ package com.example.guest.daughtersofeve.models;
 public class Photo {
     private String mCaption;
     private String mUrl;
+    private String pushId;
 
     public Photo(){
         //For Firebase
@@ -22,5 +23,13 @@ public class Photo {
 
     public String getUrl(){
         return mUrl;
+    }
+
+    public String getPushId(){
+        return pushId;
+    }
+
+    public void setPushId(String pushId){
+        this.pushId = pushId;
     }
 }

@@ -12,12 +12,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.guest.daughtersofeve.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -122,6 +125,17 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
             }
 
         });
+
+        FirebaseUser thisUser = FirebaseAuth.getInstance().getCurrentUser();
+        String userId = user.getUid();
+        DatabaseReference userReference = FirebaseDatabase
+                .getInstance()
+                .getReference("Users");
+
+        String name = mNameEditText.getText().toString();
+        String email = mEmailEditText.getText().toString();
+        User newUser = new User(name, email);
+        userReference.push().setValue(newUser);
     }
 
     private boolean isValidEmail(String email){

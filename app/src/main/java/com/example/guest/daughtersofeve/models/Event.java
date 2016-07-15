@@ -7,6 +7,7 @@ public class Event {
     private String name;
     private String imageUrl;
     private String description;
+    private String pushId;
 
     public Event(){}
 
@@ -26,5 +27,13 @@ public class Event {
 
     public String getDescription(){
         return description;
+    }
+
+    public String getPushId(){
+        return pushId;
+    }
+
+    public void setPushId(String pushId){
+        this.pushId = pushId;
     }
 }
