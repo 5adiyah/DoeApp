@@ -3,102 +3,203 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context="com.example.guest.daughtersofeve.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/backgrnd2"
-        android:scaleType="matrix" />
+        android:src="@drawable/bg15"
+        android:scaleType="centerCrop" />
 
-    <!--<android.support.v7.widget.LinearLayoutCompat-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginLeft="50dp"-->
-        <!--android:background="@color/WhiteIconText">-->
-    <!--</android.support.v7.widget.LinearLayoutCompat>-->
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="350dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:background="@color/WhiteIconText"
-        tools:context="com.example.guest.daughtersofeve.MainActivity">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topMenuBar"
+        android:background="#9010214f">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:id="@+id/loginLogo"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="120dp"
-            android:src="@drawable/logo"
-            />
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/warrow"
+            android:id="@+id/previousPage"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAUGHTERS OF EVE"
+            android:textColor="#fff"
+            android:letterSpacing=".5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
 
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/loginName"
-            android:layout_marginTop="350dp"
-            android:backgroundTint="@color/GreyLight"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:hint="Enter In Your Name"
-            android:textColorHint="@color/GreyLight" />
-
-
-        <!--<EditText-->
-            <!--android:layout_width="300dp"-->
-            <!--android:layout_height="45dp"-->
-            <!--android:inputType="textPassword"-->
-            <!--android:ems="10"-->
-            <!--android:id="@+id/loginPassword"-->
-            <!--android:layout_below="@+id/loginEmail"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--android:backgroundTint="@color/Teal100Light"-->
-            <!--android:layout_centerHorizontal="true" />-->
-
-        <Button
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:text="Login"
-        android:id="@+id/loginButton"
-        android:layout_below="@+id/loginName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/roundbutton"
-        android:backgroundTint="@color/PinkAccent100"
-        android:bottomRightRadius="200dp"
-        android:bottomLeftRadius="200dp"
-        android:topLeftRadius="200dp"
-        android:topRightRadius="200dp"/>
-
-        <Button
-            android:layout_width="170dp"
-            android:layout_height="50dp"
-            android:text="Logout"
-            android:id="@+id/logoutButton"
-            android:layout_below="@+id/loginButton"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/roundbutton"
-            android:backgroundTint="@color/PinkAccent100"
-            android:bottomRightRadius="200dp"
-            android:bottomLeftRadius="200dp"
-            android:topLeftRadius="200dp"
-            android:topRightRadius="200dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wmenu"
+            android:id="@+id/toggleMenu"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
 
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topMenuBar"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="25dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#795C8C"
+                android:alpha="0.6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/profileAbout"
+                    android:src="@drawable/member"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOARD MEMBERS"
+                    android:textColor="#fff"
+                    android:letterSpacing=".2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#795C8C"
+                android:alpha="0.6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/profileEvents"
+                    android:src="@drawable/events"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPCOMING EVENT"
+                    android:textColor="#fff"
+                    android:letterSpacing=".2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#795C8C"
+                android:alpha="0.6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/profileAbout"
+                    android:src="@drawable/photos"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT PHOTOS"
+                    android:textColor="#fff"
+                    android:letterSpacing=".2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#795C8C"
+                android:alpha="0.6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/profileTestimonial"
+                    android:src="@drawable/testimonials"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT TESTIMONIALS"
+                    android:textColor="#fff"
+                    android:letterSpacing=".2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:background="#795C8C"
+                android:alpha="0.6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/profileAccount"
+                    android:src="@drawable/settings"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCOUNT SETTINGS"
+                    android:textColor="#fff"
+                    android:letterSpacing=".2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="120dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

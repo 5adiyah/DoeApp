@@ -35,6 +35,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     @Bind(R.id.profileTestimonial) TextView mProfileTestimonial;
     @Bind(R.id.relativeLayout) RelativeLayout mRelativeLayout;
 
+    private boolean viewGroupIsVisible = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +81,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }else if(v == mRelativeLayout){
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
+//            if(viewGroupIsVisible){
+//                mProfileAbout.setVisibility(View.GONE);
+//            } else{
+//                mProfileAbout.setVisibility(View.VISIBLE);
+//            }
+//            viewGroupIsVisible = !viewGroupIsVisible;
         }
     }
 }
