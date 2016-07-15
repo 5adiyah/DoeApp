@@ -6,13 +6,13 @@
     tools:context="com.example.guest.daughtersofeve.ui.AddEventsActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/bg5"
+        android:src="@drawable/bg11"
         android:scaleType="centerCrop" />
 
     <RelativeLayout
@@ -20,7 +20,7 @@
         android:layout_height="530dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/DarkTPurple"
+        android:background="#88FDEFD9"
         >
 
         <LinearLayout
@@ -34,9 +34,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/nameEditText"
-                android:textColorHint="@color/WhiteIconText"
+                android:textColorHint="#3F2530"
                 android:textSize="11sp"
-                android:backgroundTint="@color/WhiteIconText"
+                android:backgroundTint="#3F2530"
                 android:hint="Name"/>
 
 
@@ -46,9 +46,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:id="@+id/descriptionEditText"
-                android:textColorHint="@color/WhiteIconText"
+                android:textColorHint="#3F2530"
                 android:textSize="11sp"
-                android:backgroundTint="@color/WhiteIconText"
+                android:backgroundTint="#3F2530"
                 android:hint="Description"/>
 
             <EditText
@@ -57,9 +57,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:id="@+id/imageUrl"
-                android:textColorHint="@color/WhiteIconText"
+                android:textColorHint="#3F2530"
                 android:textSize="11sp"
-                android:backgroundTint="@color/WhiteIconText"
+                android:backgroundTint="#3F2530"
                 android:fontFamily="sans-serif"
                 android:hint="Image Url"/>
 
@@ -70,7 +70,7 @@
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/createEventButton"
                 android:layout_marginTop="30dp"
-                android:background="@color/WhiteIconText"
+                android:background="#FCAD96"
                 android:text="Add Event"/>
 
             <TextView
@@ -80,8 +80,9 @@
                 android:id="@+id/eventListView"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:textColor="@color/WhiteIconText"/>
+                android:textColor="#3F2530"/>
 
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
+bg12
