@@ -71,7 +71,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
         }else if(v == mProfileAccount){
-            Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+            Intent intent = new Intent(ProfileActivity.this, AddMemberActivity.class);
             startActivity(intent);
         }else if(v == mProfileTestimonial){
             Intent intent = new Intent(ProfileActivity.this, TestimonialActivity.class);
