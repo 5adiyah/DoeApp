@@ -6,20 +6,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.guest.daughtersofeve.ui.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener{
-    @Bind(R.id.aboutNameSadio) TextView mAboutNameSadio;
-    @Bind(R.id.aboutNameAbeer) TextView mAboutNameAbeer;
-    @Bind(R.id.aboutNameFatma) TextView mAboutNameFatma;
-    @Bind(R.id.aboutNameFarah) TextView mAboutNameFarah;
-    @Bind(R.id.aboutNameRaneem) TextView mAboutNameRaneem;
+
+    @Bind(R.id.popUpMenu) LinearLayout mPopUpMenu;
+    @Bind(R.id.toggleMenu) ImageView mToggleMenu;
+    @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
+    @Bind(R.id.logoutButton) ImageView mLogoutButton;
+    private boolean viewGroupIsVisible = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,61 +31,35 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_about);
         ButterKnife.bind(this);
 
-        mAboutNameSadio.setOnClickListener(this);
-        mAboutNameAbeer.setOnClickListener(this);
-        mAboutNameFatma.setOnClickListener(this);
-        mAboutNameFarah.setOnClickListener(this);
-        mAboutNameRaneem.setOnClickListener(this);
+
+        mToggleMenu.setOnClickListener(this);
+        mPreviousPage.setOnClickListener(this); //Add page it goes to
+        mLogoutButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v == mAboutNameSadio) {
-            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, "sadiyah@daughtersofeve.org");
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Message goes here");
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
-        } else if(v == mAboutNameAbeer){
-            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, "abeer@daughtersofeve.org");
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Message goes here");
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
-        }else if(v == mAboutNameFatma){
-            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, "fatma@daughtersofeve.org");
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Message goes here");
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
-        }else if(v == mAboutNameFarah){
-            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, "farah@daughtersofeve.org");
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Message goes here");
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
-        }else if(v == mAboutNameRaneem){
-            Intent emailIntent = new Intent(Intent.ACTION_SEND);
-            emailIntent.setData(Uri.parse("mailto:"));
-            emailIntent.setType("text/plain");
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, "raneem@daughtersofeve.org");
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Message goes here");
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            finish();
+        if(v == mToggleMenu){
+            if(viewGroupIsVisible){
+                mPopUpMenu.setVisibility(View.GONE);
+            }else{
+                mPopUpMenu.setVisibility(View.VISIBLE);
+            }
+            viewGroupIsVisible = !viewGroupIsVisible;
+        } else if(v == mLogoutButton){
+            logout();
+        } else if (v == mPreviousPage) {
+            Intent intent = new Intent(AboutActivity.this, MainActivity.class);
+            startActivity(intent);
         }
 
+    }
+
+    private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(AboutActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

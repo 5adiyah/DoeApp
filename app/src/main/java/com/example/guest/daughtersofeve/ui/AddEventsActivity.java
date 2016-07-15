@@ -49,7 +49,7 @@ public class AddEventsActivity extends AppCompatActivity implements View.OnClick
             String imageUrl = mImageUrl.getText().toString();
             saveEventToFirebase(name, imageUrl, description);
 
-            Intent intent = new Intent(AddEventsActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(AddEventsActivity.this, MainActivity.class);
             startActivity(intent);
         }
 

@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".ProfileActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".EventsActivity" />
         <activity android:name=".PhotosActivity" />

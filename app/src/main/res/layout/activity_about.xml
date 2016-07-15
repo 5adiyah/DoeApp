@@ -6,37 +6,78 @@
     tools:context="com.example.guest.daughtersofeve.ProfileActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/backgrnd2"
-        android:scaleType="matrix" />
+        android:src="@drawable/bg13"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topMenuBar"
+        android:background="#9010214f">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/warrow"
+            android:id="@+id/previousPage"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAUGHTERS OF EVE"
+            android:textColor="#fff"
+            android:letterSpacing=".5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wmenu"
+            android:id="@+id/toggleMenu"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topMenuBar"
+        android:layout_centerHorizontal="true">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="350dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:background="@color/WhiteIconText"
-            android:paddingBottom="30dp"
-            tools:context="com.example.guest.daughtersofeve.MainActivity">
+            android:paddingTop="15dp"
+            android:paddingBottom="25dp"
+            android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="350dp"
+                android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/sadiyah2"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/sadiyah2"/>
 
             <TextView
@@ -47,10 +88,12 @@
                 android:id="@+id/aboutNameSadio"
                 android:layout_below="@+id/sadiyah2"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/Teal500Main"
+                android:textColor="#99ffffff"
                 android:textSize="14sp"
+                android:letterSpacing=".1"
                 android:textStyle="bold"/>
             <TextView
+
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:text="CREATIVE DIRECTOR"
@@ -58,16 +101,27 @@
                 android:id="@+id/aboutRoleSadio"
                 android:layout_below="@+id/aboutNameSadio"
                 android:layout_marginTop="1dp"
-                android:textColor="@color/GreyLight"
+                android:textColor="#44ffffff"
+                android:letterSpacing=".4"
                 android:textSize="11sp"/>
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="350dp"
+                android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/abeer"
-                android:layout_below="@+id/aboutRoleSadio"
-                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/abeer"/>
 
             <TextView
@@ -78,9 +132,11 @@
                 android:id="@+id/aboutNameAbeer"
                 android:layout_below="@+id/abeer"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/Teal500Main"
+                android:textColor="#99ffffff"
                 android:textSize="14sp"
+                android:letterSpacing=".1"
                 android:textStyle="bold"/>
+
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
@@ -89,18 +145,28 @@
                 android:id="@+id/aboutRoleAbeer"
                 android:layout_below="@+id/aboutNameAbeer"
                 android:layout_marginTop="1dp"
-                android:textColor="@color/GreyLight"
+                android:textColor="#64ffffff"
+                android:letterSpacing=".4"
                 android:textSize="11sp"/>
 
+        </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
 
             <ImageView
                 android:layout_width="350dp"
                 android:layout_height="100dp"
                 android:id="@+id/fatma2"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/fatma2"
-                android:layout_below="@+id/aboutNameAbeer"/>
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fatma2"/>
 
             <TextView
                 android:layout_width="350dp"
@@ -110,9 +176,11 @@
                 android:id="@+id/aboutNameFatma"
                 android:layout_below="@+id/fatma2"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/Teal500Main"
+                android:textColor="#99ffffff"
                 android:textSize="14sp"
+                android:letterSpacing=".1"
                 android:textStyle="bold"/>
+
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
@@ -121,18 +189,28 @@
                 android:id="@+id/aboutRoleFatma"
                 android:layout_below="@+id/aboutNameFatma"
                 android:layout_marginTop="1dp"
-                android:textColor="@color/GreyLight"
+                android:textColor="#64ffffff"
+                android:letterSpacing=".4"
                 android:textSize="11sp"/>
 
+        </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
 
             <ImageView
                 android:layout_width="350dp"
                 android:layout_height="100dp"
                 android:id="@+id/farah2"
-                android:layout_marginTop="40dp"
                 android:src="@drawable/farah2"
-                android:layout_below="@+id/aboutNameFatma"/>
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
 
             <TextView
                 android:layout_width="350dp"
@@ -142,9 +220,11 @@
                 android:id="@+id/aboutNameFarah"
                 android:layout_below="@+id/farah2"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/Teal500Main"
+                android:textColor="#99ffffff"
                 android:textSize="14sp"
+                android:letterSpacing=".1"
                 android:textStyle="bold"/>
+
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
@@ -153,17 +233,28 @@
                 android:id="@+id/aboutRoleFarah"
                 android:layout_below="@+id/aboutNameFarah"
                 android:layout_marginTop="1dp"
-                android:textColor="@color/GreyLight"
+                android:textColor="#64ffffff"
+                android:letterSpacing=".4"
                 android:textSize="11sp"/>
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
 
             <ImageView
                 android:layout_width="350dp"
                 android:layout_height="100dp"
                 android:id="@+id/raneen"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/raneem"
-                android:layout_below="@+id/aboutNameFarah"/>
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/raneem"/>
 
             <TextView
                 android:layout_width="350dp"
@@ -173,9 +264,11 @@
                 android:id="@+id/aboutNameRaneem"
                 android:layout_below="@+id/raneen"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/Teal500Main"
+                android:textColor="#99ffffff"
                 android:textSize="14sp"
+                android:letterSpacing=".1"
                 android:textStyle="bold"/>
+
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
@@ -184,15 +277,91 @@
                 android:id="@+id/aboutRoleFarah"
                 android:layout_below="@+id/aboutNameRaneem"
                 android:layout_marginTop="1dp"
-                android:textColor="@color/GreyLight"
+                android:textColor="#64ffffff"
+                android:letterSpacing=".4"
                 android:textSize="11sp"/>
-
-
-
-
 
         </RelativeLayout>
 
+    </LinearLayout>
+
+
     </ScrollView>
 
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:background="#46000000"
+        android:layout_marginTop="60dp"
+        android:id="@+id/popUpMenu"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/logoutButton"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/help"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
 </RelativeLayout>
