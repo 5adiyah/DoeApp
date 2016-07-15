@@ -30,7 +30,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddMemberActivity" />
-        <activity android:name=".AddEventsActivity"></activity>
+        <activity android:name=".AddEventsActivity" />
+        <activity android:name=".EventListActivity"></activity>
     </application>
 
 </manifest>

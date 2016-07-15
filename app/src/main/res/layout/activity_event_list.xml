@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.guest.daughtersofeve.ui.EventListActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/WhiteIconText"
+        android:layout_marginBottom="15dp"
+        tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="STORY NIGHT"
+            android:id="@+id/eventName"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/Teal500Main"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
+            android:id="@+id/eventDetails"
+            android:layout_below="@+id/eventName"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/GreyLight"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="-20dp"
+            android:id="@+id/eventPic"
+            android:src="@drawable/fire"/>
+    </RelativeLayout>
+
+</LinearLayout>

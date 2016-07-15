@@ -1,8 +1,8 @@
 package com.example.guest.daughtersofeve.models;
 
-/**
- * Created by Guest on 7/15/16.
- */
+import org.parceler.Parcel;
+
+@Parcel
 public class Event {
     private String name;
     private String imageUrl;
