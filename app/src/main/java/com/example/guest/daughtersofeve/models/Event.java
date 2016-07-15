@@ -1,44 +1,30 @@
 package com.example.guest.daughtersofeve.models;
 
 /**
- * Created by Guest on 7/11/16.
+ * Created by Guest on 7/15/16.
  */
 public class Event {
-    private String mName;
-    private String mDate;
-    private String mLocation;
-    private Integer mTicketPrice;
-    private Integer mSpotsAvailable;
-
+    private String name;
+    private String imageUrl;
+    private String description;
 
     public Event(){}
 
-    public Event(String name, String date, String location, Integer ticketPrice, Integer spotsAvailable){
-        this.mName = name;
-        this.mDate = date;
-        this.mLocation = location;
-        this.mTicketPrice = ticketPrice;
-        this.mSpotsAvailable = spotsAvailable;
+    public Event(String name, String imageUrl, String description){
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.description = description;
     }
 
     public String getName(){
-        return mName;
+        return name;
     }
 
-    public String getDate(){
-        return mDate;
+    public String getImageUrl(){
+        return imageUrl;
     }
 
-    public String getLocation(){
-        return mLocation;
-    }
-
-    public Integer getTicketPrice(){
-        return mTicketPrice;
-    }
-
-    public Integer getSpotsAvailable(){
-        return mSpotsAvailable;
+    public String getDescription(){
+        return description;
     }
 }
-

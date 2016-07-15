@@ -25,7 +25,7 @@ public class AddMemberActivity extends AppCompatActivity implements View.OnClick
     @Bind(R.id.membersListView) TextView mMembersListView;
     @Bind(R.id.createMemberButton) Button mCreateMemberButton;
 
-    public static final String TAG = CreateAccountActivity.class.getSimpleName();
+    public static final String TAG = AddMemberActivity.class.getSimpleName();
     private DatabaseReference mMemberReference;
 
 
@@ -52,7 +52,7 @@ public class AddMemberActivity extends AppCompatActivity implements View.OnClick
             String imageUrl = mImageUrl.getText().toString();
             saveMemberToFirebase(name, imageUrl, position);
 
-            Intent intent = new Intent(AddMemberActivity.this, MainActivity.class);
+            Intent intent = new Intent(AddMemberActivity.this, ProfileActivity.class);
             startActivity(intent);
         }
 
