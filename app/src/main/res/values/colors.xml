@@ -8,4 +8,7 @@
     <color name="GreyLight">#bdbdbd</color>
     <color name="GreySecondaryText">#616161</color>
     <color name="DarkMainText">#212121</color>
+
+    <color name="DarkPurple">#242040</color>
+    <color name="DarkTPurple">#55242040</color>
 </resources>
