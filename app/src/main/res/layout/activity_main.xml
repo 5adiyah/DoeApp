@@ -202,4 +202,78 @@
         </LinearLayout>
     </ScrollView>
 
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:background="#66ffffff"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/help"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="#fff"
+                android:letterSpacing=".1"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="60dp"/>
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+
 </RelativeLayout>
