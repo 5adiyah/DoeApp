@@ -70,13 +70,28 @@
             <!--android:layout_centerHorizontal="true" />-->
 
         <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/loginName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/PinkAccent100"
+        android:bottomRightRadius="200dp"
+        android:bottomLeftRadius="200dp"
+        android:topLeftRadius="200dp"
+        android:topRightRadius="200dp"/>
+
+        <Button
             android:layout_width="170dp"
             android:layout_height="50dp"
-            android:text="Login"
-            android:id="@+id/loginButton"
-            android:layout_below="@+id/loginName"
+            android:text="Logout"
+            android:id="@+id/logoutButton"
+            android:layout_below="@+id/loginButton"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundbutton"
             android:backgroundTint="@color/PinkAccent100"
             android:bottomRightRadius="200dp"
