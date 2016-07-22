@@ -30,7 +30,8 @@
         </activity>
         <activity android:name=".AddMemberActivity" />
         <activity android:name=".AddEventsActivity" />
-        <activity android:name=".EventListActivity"></activity>
+        <activity android:name=".EventListActivity" />
+        <activity android:name=".IndividualTestimonials"></activity>
     </application>
 
 </manifest>

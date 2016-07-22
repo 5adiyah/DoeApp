@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.guest.daughtersofeve.Constants;
+import com.example.guest.daughtersofeve.models.Testimonial;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -58,7 +59,8 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void saveTestimonialToFirebase(String testimonial){
-        mTestimonialReference.push().setValue(testimonial);
+        Testimonial newTestimonial = new Testimonial(testimonial);
+        mTestimonialReference.push().setValue(newTestimonial);
     }
 
 //    private void addToSharedPreferences(String testimonial){
