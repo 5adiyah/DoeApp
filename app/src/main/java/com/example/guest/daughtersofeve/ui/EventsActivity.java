@@ -1,22 +1,34 @@
 package com.example.guest.daughtersofeve.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.guest.daughtersofeve.adapters.EventsViewHolder;
 import com.example.guest.daughtersofeve.models.Event;
 import com.example.guest.daughtersofeve.ui.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class EventsActivity extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity implements View.OnClickListener{
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
+    @Bind(R.id.popUpMenu) LinearLayout mPopUpMenu;
+    @Bind(R.id.toggleMenu) ImageView mToggleMenu;
+    @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
+    @Bind(R.id.logoutButton) ImageView mLogoutButton;
+
+    private boolean viewGroupIsVisible = false;
 
     private DatabaseReference mEventReference;
     private FirebaseRecyclerAdapter mFirebaseAdapter;
@@ -31,6 +43,27 @@ public class EventsActivity extends AppCompatActivity {
                 .getInstance()
                 .getReference("Event");
         setUpFirebaseAdapter();
+
+        mToggleMenu.setOnClickListener(this);
+        mPreviousPage.setOnClickListener(this); //Add page it goes to
+        mLogoutButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v){
+        if(v == mToggleMenu){
+            if(viewGroupIsVisible){
+                mPopUpMenu.setVisibility(View.GONE);
+            }else{
+                mPopUpMenu.setVisibility(View.VISIBLE);
+            }
+            viewGroupIsVisible = !viewGroupIsVisible;
+        } else if(v == mLogoutButton){
+            logout();
+        } else if (v == mPreviousPage) {
+            Intent intent = new Intent(EventsActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
     }
 
     private void setUpFirebaseAdapter(){
@@ -51,5 +84,13 @@ public class EventsActivity extends AppCompatActivity {
     protected void onDestroy(){
         super.onDestroy();
         mFirebaseAdapter.cleanup();
+    }
+
+    private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(EventsActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

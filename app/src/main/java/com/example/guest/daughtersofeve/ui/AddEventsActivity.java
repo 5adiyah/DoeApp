@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.guest.daughtersofeve.models.Event;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -17,8 +20,8 @@ import butterknife.ButterKnife;
 
 public class AddEventsActivity extends AppCompatActivity implements View.OnClickListener{
     @Bind(R.id.nameEditText) EditText mNameEditText;
-    @Bind(R.id.descriptionEditText) EditText mDescriptionEditText;
-    @Bind(R.id.imageUrl) EditText mImageUrl;
+    @Bind(R.id.eventAge) EditText mEventAge;
+    @Bind(R.id.eventPrice) EditText mEventPrice;
     @Bind(R.id.eventListView) TextView mEventsListView;
     @Bind(R.id.createEventButton) Button mCreateEventButton;
 
@@ -39,28 +42,26 @@ public class AddEventsActivity extends AppCompatActivity implements View.OnClick
 
         mCreateEventButton.setOnClickListener(this);
         mEventsListView.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v){
         if(v==mCreateEventButton){
             String name = mNameEditText.getText().toString();
-            String description = mDescriptionEditText.getText().toString();
-            String imageUrl = mImageUrl.getText().toString();
-            saveEventToFirebase(name, imageUrl, description);
+            String eventAge = mEventAge.getText().toString();
+            String eventPrice = mEventPrice.getText().toString();
+            saveEventToFirebase(name, eventAge, eventPrice);
 
             Intent intent = new Intent(AddEventsActivity.this, MainActivity.class);
             startActivity(intent);
         }
 
-        if(v==mEventsListView){
-            Intent intent = new Intent(AddEventsActivity.this, EventsActivity.class);
-            startActivity(intent);
-        }
     }
 
-    public void saveEventToFirebase(String name, String imageUrl, String description){
-        Event event = new Event(name, imageUrl, description);
+    public void saveEventToFirebase(String name, String eventAge, String eventPrice){
+        Event event = new Event(name, eventAge, eventPrice);
         mEventReference.push().setValue(event);
     }
+
 }

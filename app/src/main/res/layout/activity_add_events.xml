@@ -45,23 +45,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:id="@+id/descriptionEditText"
+                android:id="@+id/eventAge"
                 android:textColorHint="#3F2530"
                 android:textSize="11sp"
                 android:backgroundTint="#3F2530"
-                android:hint="Description"/>
+                android:hint="Age Limit"/>
 
             <EditText
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:id="@+id/imageUrl"
+                android:id="@+id/eventPrice"
                 android:textColorHint="#3F2530"
                 android:textSize="11sp"
                 android:backgroundTint="#3F2530"
                 android:fontFamily="sans-serif"
-                android:hint="Image Url"/>
+                android:hint="Ticket Price"/>
 
 
             <Button

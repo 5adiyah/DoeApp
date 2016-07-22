@@ -37,10 +37,10 @@ public class EventsViewHolder extends RecyclerView.ViewHolder implements View.On
     public void bindEvent(Event event){
         TextView eventName = (TextView) mView.findViewById(R.id.eventName);
         eventName.setText(event.getName());
-        TextView eventDetails = (TextView) mView.findViewById(R.id.eventDetails);
-        eventDetails.setText(event.getDescription());
-//        ImageView eventPic = (ImageView) mView.findViewById(R.id.eventPic);
-//        eventPic.setImageResource(Integer.parseInt(event.getImageUrl()));
+        TextView eventAge = (TextView) mView.findViewById(R.id.eventAge);
+        eventAge.setText(event.getAge());
+        TextView eventPrice = (TextView) mView.findViewById(R.id.eventPrice);
+        eventPrice.setText(event.getPrice());
     }
 
     @Override public void onClick(View view){

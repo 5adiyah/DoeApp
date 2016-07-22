@@ -5,259 +5,146 @@
     android:layout_height="match_parent"
     tools:context="com.example.guest.daughtersofeve.EventsActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/backgrnd2"
-        android:scaleType="matrix" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/bg5"
+            android:scaleType="centerCrop" />
 
-    <RelativeLayout
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="350dp"
-        android:layout_height="1000dp"
-        android:layout_alignParentRight="true"
-        android:background="@color/WhiteIconText">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/topMenuBar"
+            android:background="#9010214f">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:background="@color/WhiteIconText"
-            tools:context="com.example.guest.daughtersofeve.MainActivity">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/warrow"
+                android:id="@+id/previousPage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
 
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/recyclerView"/>
+                android:text="DAUGHTERS OF EVE"
+                android:textColor="#fff"
+                android:letterSpacing=".5"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
 
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-                <!--xmlns:tools="http://schemas.android.com/tools"-->
-                <!--android:layout_width="350dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:background="@color/WhiteIconText"-->
-                <!--android:paddingBottom="10dp"-->
-                <!--tools:context="com.example.guest.daughtersofeve.MainActivity">-->
-
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:text="HORSE RIDING EVENT"-->
-                    <!--android:id="@+id/eventHorseName"-->
-                    <!--android:layout_marginTop="15dp"-->
-                    <!--android:textColor="@color/Teal500Main"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="bold"/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."-->
-                    <!--android:id="@+id/eventHorseDetails"-->
-                    <!--android:layout_below="@+id/eventHorseName"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:textColor="@color/GreyLight"-->
-                    <!--android:textSize="12sp"/>-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_marginLeft="175dp"-->
-                    <!--android:id="@+id/HorseEvent"-->
-                    <!--android:layout_marginTop="-22dp"-->
-                    <!--android:layout_alignParentTop="true"-->
-                    <!--android:src="@drawable/horse"/>-->
-
-            <!--</RelativeLayout>-->
-
-
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-                <!--xmlns:tools="http://schemas.android.com/tools"-->
-                <!--android:layout_width="350dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_marginTop="150dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:background="@color/WhiteIconText"-->
-                <!--android:paddingBottom="10dp"-->
-                <!--tools:context="com.example.guest.daughtersofeve.MainActivity">-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="STORY NIGHT"-->
-                    <!--android:id="@+id/eventName"-->
-                    <!--android:layout_marginTop="15dp"-->
-                    <!--android:textColor="@color/Teal500Main"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="bold"/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."-->
-                    <!--android:id="@+id/eventDetails"-->
-                    <!--android:layout_below="@+id/eventName"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:textColor="@color/GreyLight"-->
-                    <!--android:textSize="12sp"/>-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_marginLeft="175dp"-->
-                    <!--android:layout_marginTop="-22dp"-->
-                    <!--android:id="@+id/CampFire"-->
-                    <!--android:src="@drawable/fire"/>-->
-
-
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-                <!--xmlns:tools="http://schemas.android.com/tools"-->
-                <!--android:layout_width="350dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_marginTop="300dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:background="@color/WhiteIconText"-->
-                <!--android:paddingBottom="10dp"-->
-                <!--tools:context="com.example.guest.daughtersofeve.MainActivity">-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="STUDY SESSIONS"-->
-                    <!--android:id="@+id/eventName"-->
-                    <!--android:layout_marginTop="15dp"-->
-                    <!--android:textColor="@color/Teal500Main"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="bold"/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."-->
-                    <!--android:id="@+id/eventDetails"-->
-                    <!--android:layout_below="@+id/eventName"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:textColor="@color/GreyLight"-->
-                    <!--android:textSize="12sp"/>-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_marginLeft="175dp"-->
-                    <!--android:layout_marginTop="-22dp"-->
-                    <!--android:id="@+id/StudyGroup"-->
-                    <!--android:src="@drawable/study"/>-->
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-                <!--xmlns:tools="http://schemas.android.com/tools"-->
-                <!--android:layout_width="350dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_marginTop="450dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:background="@color/WhiteIconText"-->
-                <!--android:paddingBottom="10dp"-->
-                <!--tools:context="com.example.guest.daughtersofeve.MainActivity">-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="MOTHER DAUGHTER DINNER"-->
-                    <!--android:id="@+id/eventName"-->
-                    <!--android:layout_marginTop="8dp"-->
-                    <!--android:textColor="@color/Teal500Main"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="bold"/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."-->
-                    <!--android:id="@+id/eventDetails"-->
-                    <!--android:layout_below="@+id/eventName"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:textColor="@color/GreyLight"-->
-                    <!--android:textSize="12sp"/>-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_marginLeft="175dp"-->
-                    <!--android:layout_marginTop="-22dp"-->
-                    <!--android:id="@+id/FormalEvents"-->
-                    <!--android:src="@drawable/dinner"/>-->
-
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-                <!--xmlns:tools="http://schemas.android.com/tools"-->
-                <!--android:layout_width="350dp"-->
-                <!--android:layout_height="150dp"-->
-                <!--android:layout_marginTop="600dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:background="@color/WhiteIconText"-->
-                <!--android:layout_marginBottom="-40dp"-->
-                <!--tools:context="com.example.guest.daughtersofeve.MainActivity">-->
-
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="HIKING EVENTS"-->
-                    <!--android:id="@+id/eventName"-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--android:textColor="@color/Teal500Main"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="bold"/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."-->
-                    <!--android:id="@+id/eventDetails"-->
-                    <!--android:layout_below="@+id/eventName"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:textColor="@color/GreyLight"-->
-                    <!--android:textSize="12sp"/>-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="175dp"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:layout_marginLeft="175dp"-->
-                    <!--android:layout_marginTop="-22dp"-->
-                    <!--android:id="@+id/OutDoorEvents"-->
-                    <!--android:src="@drawable/hike"/>-->
-            <!--</RelativeLayout>-->
-
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/wmenu"
+                android:id="@+id/toggleMenu"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
 
         </RelativeLayout>
 
-    </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:background="#46000000"
+            android:layout_marginTop="60dp"
+            android:id="@+id/popUpMenu"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/logoutButton"
+                    android:src="@drawable/logout"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textColor="#fff"
+                    android:letterSpacing=".1"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="60dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/settings"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="#fff"
+                    android:letterSpacing=".1"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="60dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/help"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:textColor="#fff"
+                    android:letterSpacing=".1"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="60dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="#140B1B"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerView"/>
+
+            </LinearLayout>
+
+
+
     </RelativeLayout>
-</RelativeLayout>

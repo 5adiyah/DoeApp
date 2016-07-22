@@ -6,44 +6,75 @@
     android:orientation="vertical"
     tools:context="com.example.guest.daughtersofeve.ui.EventListActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@color/WhiteIconText"
-        android:layout_marginBottom="15dp"
-        tools:context="com.example.guest.daughtersofeve.MainActivity">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:background="@drawable/roundbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        >
+
 
         <TextView
-            android:layout_width="175dp"
-            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="STORY NIGHT"
+            android:textColor="#B27AD1"
             android:id="@+id/eventName"
-            android:layout_marginTop="2dp"
-            android:textColor="@color/Teal500Main"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="EVENT TITLE"/>
 
-        <TextView
-            android:layout_width="170dp"
-            android:layout_marginLeft="5dp"
-            android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque dapibus dolor tincidunt luctus."
-            android:id="@+id/eventDetails"
-            android:layout_below="@+id/eventName"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/GreyLight"
-            android:textSize="12sp"/>
 
-        <ImageView
-            android:layout_width="175dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="175dp"
-            android:layout_marginTop="-20dp"
-            android:id="@+id/eventPic"
-            android:src="@drawable/fire"/>
-    </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="AGES:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="55dp"
+                android:textSize="16sp"
+                android:id="@+id/eventAge"
+                android:text="12-25"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="140dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="PRICE:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="200dp"
+                android:textSize="16sp"
+                android:id="@+id/eventPrice"
+                android:text="$20.00:"/>
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
 </LinearLayout>
