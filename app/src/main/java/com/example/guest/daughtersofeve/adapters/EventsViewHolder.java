@@ -48,6 +48,7 @@ public class EventsViewHolder extends RecyclerView.ViewHolder implements View.On
         DatabaseReference ref = FirebaseDatabase
                 .getInstance()
                 .getReference("Event");
+
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
