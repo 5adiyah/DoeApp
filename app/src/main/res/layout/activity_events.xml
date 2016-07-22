@@ -50,15 +50,28 @@
 
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="#140B1B"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
 
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="150dp"
             android:layout_height="170dp"
-            android:background="#46000000"
+            android:background="@color/DarkTPurple"
             android:layout_marginTop="60dp"
-            android:id="@+id/popUpMenu"
             android:visibility="gone"
+            android:id="@+id/popUpMenu"
             android:layout_alignParentRight="true"
             android:orientation="vertical">
 
@@ -114,15 +127,16 @@
                     android:layout_height="30dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/help"/>
+                    android:id="@+id/addEventButton"
+                    android:src="@drawable/add"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Help"
+                    android:text="Add Event"
                     android:textColor="#fff"
                     android:letterSpacing=".1"
-                    android:layout_marginTop="23dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="60dp"/>
             </RelativeLayout>
 
@@ -130,20 +144,6 @@
         </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
-                android:background="#140B1B"
-                android:layout_centerHorizontal="true"
-                android:orientation="vertical">
-
-                <android.support.v7.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/recyclerView"/>
-
-            </LinearLayout>
 
 
 

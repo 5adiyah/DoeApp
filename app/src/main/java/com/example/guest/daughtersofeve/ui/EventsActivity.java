@@ -27,6 +27,7 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
     @Bind(R.id.toggleMenu) ImageView mToggleMenu;
     @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
     @Bind(R.id.logoutButton) ImageView mLogoutButton;
+    @Bind(R.id.addEventButton) ImageView mAddEventButton;
 
     private boolean viewGroupIsVisible = false;
 
@@ -47,6 +48,7 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         mToggleMenu.setOnClickListener(this);
         mPreviousPage.setOnClickListener(this); //Add page it goes to
         mLogoutButton.setOnClickListener(this);
+        mAddEventButton.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +64,9 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
             logout();
         } else if (v == mPreviousPage) {
             Intent intent = new Intent(EventsActivity.this, MainActivity.class);
+            startActivity(intent);
+        } else if (v == mAddEventButton) {
+            Intent intent = new Intent(EventsActivity.this, AdminActivity.class);
             startActivity(intent);
         }
     }

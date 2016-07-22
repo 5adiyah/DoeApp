@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(v == mLogoutButton){
             logout();
         } else if(v == mProfileAbout){
-            Intent intent = new Intent(MainActivity.this, AddEventsActivity.class);
+            Intent intent = new Intent(MainActivity.this, TestimonialsListActivity.class);
             startActivity(intent);
         }else if(v == mProfileEvents){
             Intent intent = new Intent(MainActivity.this, EventsActivity.class);
