@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.guest.daughtersofeve.Constants;
 import com.example.guest.daughtersofeve.models.Testimonial;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -22,10 +25,15 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
     //private SharedPreferences.Editor mEditor;
 
     private DatabaseReference mTestimonialReference;
+    private boolean viewGroupIsVisible = false;
 
     @Bind(R.id.testimonialButton) Button mTestimonialButton;
     @Bind(R.id.testimonialText) EditText mTestimonialText;
     @Bind(R.id.eventText) EditText mEventText;
+    @Bind(R.id.popUpMenu) LinearLayout mPopUpMenu;
+    @Bind(R.id.toggleMenu) ImageView mToggleMenu;
+    @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
+    @Bind(R.id.logoutButton) ImageView mLogoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,9 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
         //mEditor = mSharedPreferences.edit();
 
         mTestimonialButton.setOnClickListener(this);
+        mToggleMenu.setOnClickListener(this);
+        mPreviousPage.setOnClickListener(this); //Add page it goes to
+        mLogoutButton.setOnClickListener(this);
     }
 
     @Override
@@ -55,8 +66,29 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
             //addToSharedPreferences(testimonial);
             intent.putExtra("testimonial", testimonial);
             startActivity(intent);
+        }else if(v == mToggleMenu){
+            if(viewGroupIsVisible){
+                mPopUpMenu.setVisibility(View.GONE);
+            }else{
+                mPopUpMenu.setVisibility(View.VISIBLE);
+            }
+            viewGroupIsVisible = !viewGroupIsVisible;
+        } else if(v == mLogoutButton){
+            logout();
+        } else if (v == mPreviousPage) {
+            Intent intent = new Intent(TestimonialActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
+
+    private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(TestimonialActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
 
     public void saveTestimonialToFirebase(String testimonial){
         Testimonial newTestimonial = new Testimonial(testimonial);
