@@ -68,6 +68,7 @@
                 android:layout_height="80dp"
                 android:layout_marginTop="5dp"
                 android:background="#795C8C"
+                android:id="@+id/profileAboutLayout"
                 android:alpha="0.6"
                 android:layout_gravity="center">
 
@@ -85,6 +86,7 @@
                     android:text="BOARD MEMBERS"
                     android:textColor="#fff"
                     android:letterSpacing=".2"
+                    android:id="@+id/profileAboutText"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="120dp"/>
 
@@ -96,6 +98,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#795C8C"
                 android:alpha="0.6"
+                android:id="@+id/profileEventsLayout"
                 android:layout_gravity="center">
 
                 <ImageView
@@ -112,6 +115,7 @@
                     android:text="UPCOMING EVENT"
                     android:textColor="#fff"
                     android:letterSpacing=".2"
+                    android:id="@+id/profileEventsText"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="120dp"/>
 
@@ -123,6 +127,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#795C8C"
                 android:alpha="0.6"
+                android:id="@+id/profilePhotosLayout"
                 android:layout_gravity="center">
 
                 <ImageView
@@ -139,6 +144,7 @@
                     android:text="EVENT PHOTOS"
                     android:textColor="#fff"
                     android:letterSpacing=".2"
+                    android:id="@+id/profilePhotosText"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="120dp"/>
 
@@ -150,6 +156,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#795C8C"
                 android:alpha="0.6"
+                android:id="@+id/profileTestimonialLayout"
                 android:layout_gravity="center">
 
                 <ImageView
@@ -166,6 +173,7 @@
                     android:text="SUBMIT TESTIMONIAL"
                     android:textColor="#fff"
                     android:letterSpacing=".2"
+                    android:id="@+id/profileTestimonialText"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="120dp"/>
 
@@ -177,6 +185,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#795C8C"
                 android:alpha="0.6"
+                android:id="@+id/profileAccountLayout"
                 android:layout_gravity="center">
 
                 <ImageView
@@ -193,6 +202,7 @@
                     android:text="ACCOUNT SETTINGS"
                     android:textColor="#fff"
                     android:letterSpacing=".2"
+                    android:id="@+id/profileAccountText"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="120dp"/>
 
