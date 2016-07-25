@@ -74,6 +74,50 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:id="@+id/nura"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nura"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="NURA El-MAGBARI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameNura"
+                android:layout_below="@+id/nura"
+                android:layout_marginTop="10dp"
+                android:textColor="#99ffffff"
+                android:textSize="14sp"
+                android:letterSpacing=".1"
+                android:textStyle="bold"/>
+            <TextView
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="DAUGHTERS OF EVE DIRECTOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleNura"
+                android:layout_below="@+id/aboutNameNura"
+                android:layout_marginTop="1dp"
+                android:textColor="#44ffffff"
+                android:letterSpacing=".4"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:id="@+id/sadiyah2"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
