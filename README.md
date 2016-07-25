@@ -6,9 +6,17 @@
 ## Description
 
 This Android application is made for Daughters of Eve, a nonprofit organization based in Portland Oregon. 
-The app allows DOE Board Members to add events, view user submitted event pictures, and event feedback. 
-Non-board members can view upcoming events, sign up for events, purchase tickets, and submit pictures or feedback 
-from events.
+The app allows DOE Board Members to add events, view user submitted event testimonials and feedback. 
+Non-board members can view board members, upcoming events, event photos, and submit feedback from events.
+
+Future versions will allow users to sign up for events, purchase tickets, and submit event pictures. 
+
+##Screenshots
+
+<img id="screen-1" src="http://daughtersofeve.org/5.png" width="220" title="Login Screen" />
+<img id="screen-2" src="http://daughtersofeve.org/3.png" width="220" title="Main Menu" />
+<img id="screen-3" src="http://daughtersofeve.org/2.png" width="220" title="Board Members" />
+<img id="screen-4" src="http://daughtersofeve.org/4.png" width="220" title="Upcming Events" />
 
 ## Setup/Installation Requirements
 You will need the following programs installed on your computer.
