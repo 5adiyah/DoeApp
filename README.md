@@ -13,10 +13,10 @@ Future versions will allow users to sign up for events, purchase tickets, and su
 
 ##Screenshots
 
-<img id="screen-1" src="http://daughtersofeve.org/5.png" width="220" title="Login Screen" />
-<img id="screen-2" src="http://daughtersofeve.org/3.png" width="220" title="Main Menu" />
-<img id="screen-3" src="http://daughtersofeve.org/2.png" width="220" title="Board Members" />
-<img id="screen-4" src="http://daughtersofeve.org/4.png" width="220" title="Upcming Events" />
+<img id="screen-1" src="http://daughtersofeve.org/5.png" width="400" title="Login Screen" />
+<img id="screen-2" src="http://daughtersofeve.org/3.png" width="400" title="Main Menu" />
+<img id="screen-3" src="http://daughtersofeve.org/2.png" width="400" title="Board Members" />
+<img id="screen-4" src="http://daughtersofeve.org/4.png" width="400" title="Upcming Events" />
 
 ## Setup/Installation Requirements
 You will need the following programs installed on your computer.
