@@ -46,7 +46,6 @@ public class PhotoListAdapter extends RecyclerView.Adapter<PhotoListAdapter.Phot
 
     public class PhotoViewHolder extends RecyclerView.ViewHolder {
         @Bind(R.id.photosImageView) ImageView mPhotosImageView;
-        @Bind(R.id.captionTextView) TextView mCaptionTextView;
         private Context mContext;
 
         public PhotoViewHolder(View itemView){
@@ -58,7 +57,6 @@ public class PhotoListAdapter extends RecyclerView.Adapter<PhotoListAdapter.Phot
 
         public void bindPhoto(Photo photo) {
             Picasso.with(mContext).load(photo.getUrl()).into(mPhotosImageView);
-            mCaptionTextView.setText(photo.getCaption());
         }
     }
 

@@ -2,6 +2,7 @@ package com.example.guest.daughtersofeve.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -59,10 +60,12 @@ public class PhotosActivity extends AppCompatActivity {
                     public void run(){
                         mAdapter = new PhotoListAdapter(getApplicationContext(), mPhotos);
                         mRecyclerView.setAdapter(mAdapter);
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(PhotosActivity.this);
+//                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(PhotosActivity.this);
+                        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 2);
                         mRecyclerView.setLayoutManager(layoutManager);
                         mRecyclerView.setHasFixedSize(true);
                         String[] photoCaptions = new String[mPhotos.size()];
+
                     }
 
                 });
