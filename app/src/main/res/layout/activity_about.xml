@@ -274,8 +274,52 @@
                 android:layout_height="wrap_content"
                 android:text="TREASURER"
                 android:textAlignment="center"
-                android:id="@+id/aboutRoleFarah"
+                android:id="@+id/aboutRoleRaneem"
                 android:layout_below="@+id/aboutNameFarah"
+                android:layout_marginTop="1dp"
+                android:textColor="#64ffffff"
+                android:letterSpacing=".4"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#66795C8C"
+            android:paddingBottom="13dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:id="@+id/fariha"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fariha"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="FARIHA ALI"
+                android:textAlignment="center"
+                android:id="@+id/aboutNameFariha"
+                android:layout_below="@+id/fariha"
+                android:layout_marginTop="10dp"
+                android:textColor="#99ffffff"
+                android:textSize="14sp"
+                android:letterSpacing=".1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITIES COORDINATOR"
+                android:textAlignment="center"
+                android:id="@+id/aboutRoleFariha"
+                android:layout_below="@+id/aboutNameFariha"
                 android:layout_marginTop="1dp"
                 android:textColor="#64ffffff"
                 android:letterSpacing=".4"
