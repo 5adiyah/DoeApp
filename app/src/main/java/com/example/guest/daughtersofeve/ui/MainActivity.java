@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Bind(R.id.profileAbout) ImageView mProfileAbout;
     @Bind(R.id.profileAboutLayout) RelativeLayout mProfileAboutLayout;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
     @Bind(R.id.profileAboutText) TextView mProfileAboutText;
 
     @Bind(R.id.profileEvents) ImageView mProfileEvents;
@@ -146,6 +147,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);
         }else if(v == mProfileAccountText){
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
+        }else if(v == mTopMenuBar){
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);
         }

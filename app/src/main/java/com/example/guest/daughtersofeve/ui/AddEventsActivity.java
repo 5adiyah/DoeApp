@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guest.daughtersofeve.models.Event;
@@ -24,6 +25,7 @@ public class AddEventsActivity extends AppCompatActivity implements View.OnClick
     @Bind(R.id.eventPrice) EditText mEventPrice;
     @Bind(R.id.eventListView) TextView mEventsListView;
     @Bind(R.id.createEventButton) Button mCreateEventButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     public static final String TAG = AddEventsActivity.class.getSimpleName();
     private DatabaseReference mEventReference;
@@ -42,6 +44,7 @@ public class AddEventsActivity extends AppCompatActivity implements View.OnClick
 
         mCreateEventButton.setOnClickListener(this);
         mEventsListView.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
 
     }
 
@@ -53,6 +56,9 @@ public class AddEventsActivity extends AppCompatActivity implements View.OnClick
             String eventPrice = mEventPrice.getText().toString();
             saveEventToFirebase(name, eventAge, eventPrice);
 
+            Intent intent = new Intent(AddEventsActivity.this, MainActivity.class);
+            startActivity(intent);
+        } else if (v == mTopMenuBar) {
             Intent intent = new Intent(AddEventsActivity.this, MainActivity.class);
             startActivity(intent);
         }

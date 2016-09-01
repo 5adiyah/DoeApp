@@ -36,6 +36,7 @@ public class TestimonialsListActivity extends AppCompatActivity implements View.
     @Bind(R.id.toggleMenu) ImageView mToggleMenu;
     @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
     @Bind(R.id.logoutButton) ImageView mLogoutButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
 
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
@@ -55,6 +56,7 @@ public class TestimonialsListActivity extends AppCompatActivity implements View.
         mToggleMenu.setOnClickListener(this);
         mPreviousPage.setOnClickListener(this); //Add page it goes to
         mLogoutButton.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
 
         mTestimonialRef = FirebaseDatabase
                 .getInstance()
@@ -76,6 +78,9 @@ public class TestimonialsListActivity extends AppCompatActivity implements View.
             logout();
         } else if (v == mPreviousPage) {
             Intent intent = new Intent(TestimonialsListActivity.this, TestimonialActivity.class);
+            startActivity(intent);
+        }else if (v == mTopMenuBar) {
+            Intent intent = new Intent(TestimonialsListActivity.this, MainActivity.class);
             startActivity(intent);
         }
     }

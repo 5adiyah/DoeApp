@@ -59,6 +59,7 @@ public class InstagramService {
                         caption = captionObject.getString("text");
                     } else {
                         caption = "no caption";
+
                     }
                     String url = photoJSON.getJSONObject("images").getJSONObject("thumbnail").getString("url");
 

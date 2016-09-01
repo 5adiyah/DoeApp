@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import butterknife.Bind;
@@ -15,6 +16,7 @@ import butterknife.ButterKnife;
 public class AdminActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.passwordEditText) EditText mPasswordEditText;
     @Bind(R.id.passwordLoginButton) Button mPasswordLoginButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,11 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
             } else {
                 Toast.makeText(AdminActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
             }
+        }
+
+        if (v==mTopMenuBar){
+            Intent intent = new Intent(AdminActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 

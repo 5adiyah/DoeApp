@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guest.daughtersofeve.models.BoardMember;
@@ -24,6 +25,7 @@ public class AddMemberActivity extends AppCompatActivity implements View.OnClick
     @Bind(R.id.imageUrl) EditText mImageUrl;
     @Bind(R.id.membersListView) TextView mMembersListView;
     @Bind(R.id.createMemberButton) Button mCreateMemberButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     public static final String TAG = AddMemberActivity.class.getSimpleName();
     private DatabaseReference mMemberReference;
@@ -42,6 +44,7 @@ public class AddMemberActivity extends AppCompatActivity implements View.OnClick
 
         mCreateMemberButton.setOnClickListener(this);
         mMembersListView.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,11 @@ public class AddMemberActivity extends AppCompatActivity implements View.OnClick
 
         if(v==mMembersListView){
             Intent intent = new Intent(AddMemberActivity.this, AboutActivity.class);
+            startActivity(intent);
+        }
+
+        if(v == mTopMenuBar){
+            Intent intent = new Intent(AddMemberActivity.this, MainActivity.class);
             startActivity(intent);
         }
     }

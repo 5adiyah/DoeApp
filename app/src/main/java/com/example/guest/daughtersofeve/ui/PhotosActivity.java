@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guest.daughtersofeve.ui.R;
@@ -37,6 +38,7 @@ public class PhotosActivity extends AppCompatActivity implements View.OnClickLis
     @Bind(R.id.toggleMenu) ImageView mToggleMenu;
     @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
     @Bind(R.id.logoutButton) ImageView mLogoutButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     private PhotoListAdapter mAdapter;
     private boolean viewGroupIsVisible = false;
@@ -52,6 +54,7 @@ public class PhotosActivity extends AppCompatActivity implements View.OnClickLis
         mToggleMenu.setOnClickListener(this);
         mPreviousPage.setOnClickListener(this); //Add page it goes to
         mLogoutButton.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +69,9 @@ public class PhotosActivity extends AppCompatActivity implements View.OnClickLis
         } else if(v == mLogoutButton){
             logout();
         } else if (v == mPreviousPage) {
+            Intent intent = new Intent(PhotosActivity.this, MainActivity.class);
+            startActivity(intent);
+        }else if (v == mTopMenuBar) {
             Intent intent = new Intent(PhotosActivity.this, MainActivity.class);
             startActivity(intent);
         }

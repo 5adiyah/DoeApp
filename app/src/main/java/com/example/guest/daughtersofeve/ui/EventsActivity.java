@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.guest.daughtersofeve.adapters.EventsViewHolder;
 import com.example.guest.daughtersofeve.models.Event;
@@ -28,6 +29,7 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
     @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
     @Bind(R.id.logoutButton) ImageView mLogoutButton;
     @Bind(R.id.addEventButton) ImageView mAddEventButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     private boolean viewGroupIsVisible = false;
 
@@ -49,6 +51,7 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         mPreviousPage.setOnClickListener(this); //Add page it goes to
         mLogoutButton.setOnClickListener(this);
         mAddEventButton.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +66,9 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         } else if(v == mLogoutButton){
             logout();
         } else if (v == mPreviousPage) {
+            Intent intent = new Intent(EventsActivity.this, MainActivity.class);
+            startActivity(intent);
+        } else if (v == mTopMenuBar) {
             Intent intent = new Intent(EventsActivity.this, MainActivity.class);
             startActivity(intent);
         } else if (v == mAddEventButton) {
@@ -83,6 +89,14 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mFirebaseAdapter);
+
+//        mFirebaseAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
+//            @Override
+//            public void onItemRangeInserted(int positionStart, int itemCount) {
+//                super.onItemRangeInserted(positionStart, itemCount);
+//                mFirebaseAdapter.notifyDataSetChanged();
+//            }
+//        });
     }
 
     @Override

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,7 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
     @Bind(R.id.passwordEditText) EditText mPasswordEditText;
     @Bind(R.id.confirmPasswordEditText) EditText mConfirmPasswordEditText;
     @Bind(R.id.loginTextView) TextView mLoginTextView;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     public static final String TAG = CreateAccountActivity.class.getSimpleName();
 
@@ -52,6 +54,7 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
 
         mLoginTextView.setOnClickListener(this);
         mCreateUserButton.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
 
     }
 
@@ -66,6 +69,11 @@ public class CreateAccountActivity extends AppCompatActivity implements View.OnC
 
         if(view == mCreateUserButton){
             createNewUser();
+        }
+
+        if(view == mTopMenuBar){
+            Intent intent = new Intent(CreateAccountActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 

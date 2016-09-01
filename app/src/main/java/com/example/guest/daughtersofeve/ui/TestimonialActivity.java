@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.guest.daughtersofeve.Constants;
 import com.example.guest.daughtersofeve.models.Testimonial;
@@ -34,6 +35,7 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
     @Bind(R.id.toggleMenu) ImageView mToggleMenu;
     @Bind(R.id.previousPage) ImageView mPreviousPage; //Change for each page
     @Bind(R.id.logoutButton) ImageView mLogoutButton;
+    @Bind(R.id.topMenuBar) RelativeLayout mTopMenuBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
         mToggleMenu.setOnClickListener(this);
         mPreviousPage.setOnClickListener(this); //Add page it goes to
         mLogoutButton.setOnClickListener(this);
+        mTopMenuBar.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +79,9 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
         } else if(v == mLogoutButton){
             logout();
         } else if (v == mPreviousPage) {
+            Intent intent = new Intent(TestimonialActivity.this, MainActivity.class);
+            startActivity(intent);
+        } else if (v == mTopMenuBar) {
             Intent intent = new Intent(TestimonialActivity.this, MainActivity.class);
             startActivity(intent);
         }
