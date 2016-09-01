@@ -259,7 +259,7 @@
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="ABEER KHAKWANI"
+                android:text="FARAH ABUKHATER"
                 android:textAlignment="center"
                 android:id="@+id/aboutNameFarah"
                 android:layout_below="@+id/farah2"
@@ -347,7 +347,7 @@
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="RANEEM ALI"
+                android:text="RAMEEN ALI"
                 android:textAlignment="center"
                 android:id="@+id/aboutNameRaneem"
                 android:layout_below="@+id/raneen"
